@@ -1,0 +1,186 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
+.result, .summery{
+    width: 250px;
+    height: 400px;
+}
+.result{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result h1:first-child{
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.64);
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result p span:first-child{
+    font-size: 50px;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+.result p span:last-child{
+    color: hsla(0, 0%, 100%, 0.38);
+}
+.great{
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    margin: 20px 0 0 0;
+}
+.para{
+    width: 180px;
+    font-size: 12px;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.78);
+}
+.summery{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.summery h1{
+    font-size: 20px;
+}
+.reaction, .memory, .verbal, .visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon1, .icon2, .icon3, .icon4{
+    display: flex;
+    align-items: center;
+}
+.reaction h1, .memory h1, .verbal h1, .visual h1{
+    margin-left: 10px;
+    font-size: 17px;
+}
+.reaction{
+    background-color: hsla(0, 100%, 67.1%, 0.08);
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.reaction h1{
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsla(38.8, 100%, 56.1%, 0.08);
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.memory h1{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37.1%, 0.08);
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.verbal h1{
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsla(233.8, 85.2%, 44.9%, 0.08);
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.visual h1{
+    color: hsl(234, 85%, 45%);
+}
+
+.reaction .spans span:first-child,
+.memory .spans span:first-child,
+.verbal .spans span:first-child,
+.visual .spans span:first-child{
+    font-weight: 900;
+}
+.reaction .spans span:last-child,
+.memory .spans span:last-child,
+.verbal .spans span:last-child,
+.visual .spans span:last-child{
+    color: #00000069;
+}
+
+button{
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 17px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+    button{
+        background: none;
+        background-color: hsl(224, 30%, 27%);
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .container{
+        flex-direction: column;
+        transform: translate(-50%, -50%);
+    }
+    .result{
+        height: 300px;
+    }
+    .result p span:first-child {
+        font-size: 40px;
+    }
+    .great {
+        font-size: 25px;
+    }
+    .para {
+        width: 210px;
+    }
+    .circle {
+        width: 120px;
+    }
+    .summery{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    button{
+        background: none;
+        background-color: hsl(224, 30%, 27%);
+    }
+}
